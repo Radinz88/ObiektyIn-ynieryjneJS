@@ -1,7 +1,8 @@
-Rozpoczęcie prac nad frontendem wymaga określenia kilku kluczowych kroków, które pozwolą na efektywny i zorganizowany start. Oto kilka kroków, od których możesz zacząć prace nad frontendem:
+Rozpoczęcie prac nad frontendem wymaga określenia kilku kluczowych kroków, które pozwolą na efektywny i zorganizowany start. 
+Oto kilka kroków, od których możesz zacząć prace nad frontendem:
 
 1. Określenie wymagań: 
-Zacznij od zrozumienia wymagań projektu. Skonsultuj się z klientem lub zespołem biznesowym, aby uzyskać jasny obraz tego, czego oczekują od aplikacji, jakie funkcje powinna posiadać i jak ma wyglądać interfejs użytkownika.
+Zacznij od zrozumienia wymagań projektu. Jakie funkcje aplikacja powinna posiadać i jak ma wyglądać interfejs użytkownika.
 
 2. Prototypowanie i projektowanie: 
 Stwórz prototyp interfejsu użytkownika, aby zwizualizować wygląd i strukturę aplikacji. Możesz użyć narzędzi do projektowania interfejsu, takich jak Figma, Adobe XD lub Sketch. Prototypowanie pomoże zrozumieć przepływ użytkownika i zaprojektować interfejs, który będzie intuicyjny dla użytkowników.
