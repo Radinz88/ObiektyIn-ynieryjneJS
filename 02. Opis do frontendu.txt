@@ -1,0 +1,37 @@
+Oto opis interfejsu użytkownika dla aplikacji frontendowej "Obiekty Inżynieryjne PLK", uwzględniający proponowane rozwiązanie nawigacji dla różnych urządzeń:
+
+1. Strona główna (Wizytówka strony):
+   - Na stronie głównej użytkownicy będą witani informacjami o aplikacji i zaprezentowaną listą linii kolejowych.
+   - Wygląd strony będzie przejrzysty, z czytelnymi nagłówkami i grafiką, zachęcający użytkowników do dalszego korzystania z aplikacji.
+
+2. Rejestracja i logowanie:
+   - Na stronie logowania użytkownicy będą mieli dostęp do formularza rejestracji, gdzie wprowadzą swoje dane: nazwę użytkownika, adres e-mail i hasło.
+   - Po zarejestrowaniu, użytkownicy będą mogli zalogować się za pomocą formularza logowania, podając swoją nazwę użytkownika i hasło.
+
+3. Panel użytkownika:
+   - Po zalogowaniu użytkownicy zostaną przekierowani do swojego panelu użytkownika.
+   - Panel użytkownika będzie zawierał informacje o użytkowniku, takie jak nazwa, typ użytkownika oraz sekcję umożliwiającą zmianę hasła dostępu i edycję danych osobowych.
+
+4. Nawigacja na komputerach PC:
+   - Na komputerach PC, po zalogowaniu użytkownicy będą mieli dostęp do listy rozwijanej typu 'drzewo' lub drzewa menu bocznego, gdzie wybiorą interesującą ich linię kolejową.
+   - Po wybraniu linii kolejowej, w odpowiedniej części interfejsu, użytkownik zobaczy listę obiektów inżynieryjnych przypisanych do wybranej linii.
+   - Po wybraniu konkretnego obiektu, użytkownik zostanie przekierowany na stronę karty obiektu z pełnymi informacjami o obiekcie.
+
+5. Nawigacja na urządzeniach mobilnych:
+   - Na urządzeniach mobilnych, po zalogowaniu, użytkownicy będą mieli dostęp do bocznego menu typu hamburger.
+   - Po otwarciu menu hamburgera, użytkownik wybierze interesującą go linię kolejową.
+   - Po wybraniu linii kolejowej, użytkownik zostanie przekierowany na nowy widok aplikacji mobilnej, gdzie wyświetlane będą obiekty inżynieryjne przypisane do wybranej linii.
+   - Na widoku mobilnym, użytkownicy zobaczą kafelkowy układ obiektów inżynieryjnych, gdzie każdy obiekt będzie zawierał podstawowe informacje i miniaturkę zdjęcia.
+   - Po wybraniu konkretnego obiektu z widoku mobilnego, użytkownik zostanie przekierowany na stronę szczegółową tego obiektu.
+
+6. Strona karty obiektu:
+   - Na stronie karty obiektu użytkownicy zobaczą pełne informacje o wybranym obiekcie inżynieryjnym, w tym nagłówek, zdjęcie, parametry techniczne, opis stanu technicznego, lokalizację na mapie Google oraz sekcję komentarzy.
+   - Strona będzie zaprojektowana w sposób czytelny i estetyczny, z zachowaniem spójności stylistycznej z resztą aplikacji.
+
+7. Integracja z Google Maps API:
+   - Na stronie karty obiektu, będzie wyświetlana lokalizacja obiektu inżynieryjnego na mapie Google, umożliwiająca użytkownikom łatwe zlokalizowanie obiektu.
+
+8. Responsywność:
+   - Interfejs użytkownika będzie odpowiednio dostosowany do różnych urządzeń, zapewniając przyjazne i intuicyjne doświadczenie zarówno na komputerach PC, jak i na urządzeniach mobilnych.
+
+W celu osiągnięcia przyjaznego i intuicyjnego interfejsu, dbamy o odpowiednią organizację elementów, czytelne prezentowanie danych oraz spójny wygląd graficzny aplikacji na wszystkich urządzeniach. Nawigacja została dostosowana do specyfiki poszczególnych urządzeń, aby zapewnić użytkownikom wygodny dostęp do funkcji i danych aplikacji bez względu na używaną platformę.

@@ -1,0 +1,27 @@
+Opis struktury:
+
+- `backend/`: Katalog zawierający kod backendu aplikacji w Pythonie.
+  - `controllers/`: Kontrolery obsługujące zapytania HTTP.
+  - `models/`: Modele danych dla komunikacji z bazą danych.
+  - `routes/`: Definicje tras (endpointy) dla aplikacji.
+  - `utils/`: Pomocnicze funkcje i narzędzia.
+  - `app.py`: Główny plik uruchamiający aplikację backendową.
+  - `db.py`: Inicjalizacja i konfiguracja bazy danych SQLite.
+  - `requirements.txt`: Plik z wymaganymi bibliotekami Pythona.
+
+- `frontend/`: Katalog zawierający kod frontendu aplikacji w HTML, CSS i JavaScript.
+  - `index.html`: Główny plik HTML dla aplikacji.
+  - `styles.css`: Plik ze stylami CSS.
+  - `main.js`: Główny plik JavaScript, gdzie będzie zawarta logika aplikacji.
+  - `components/`: Komponenty reużywalne w formacie HTML.
+  - `pages/`: Poszczególne strony aplikacji w formacie HTML.
+  - `services/`: Integracja z backendem i Google Maps API w formacie JavaScript.
+  - `utils/`: Pomocnicze funkcje i narzędzia w formacie JavaScript.
+
+- `database/`: Katalog przechowujący bazę danych SQLite.
+
+- `.gitignore`: Plik definiujący, które pliki i katalogi mają być ignorowane przez system kontroli wersji Git.
+
+- `README.md`: Plik zawierający dokumentację i opis aplikacji.
+
+W tym układzie, frontend zawiera kod w formacie HTML, CSS i JavaScript, podczas gdy backend jest napisany w Pythonie. Struktura ta pozwoli na odpowiednie oddzielenie warstwy frontendu od backendu i umożliwi pracę zgodnie z wybranymi technologiami. Pamiętaj, że to tylko ogólne wskazówki, a konkretna struktura może być dostosowana do potrzeb projektu.

@@ -1,0 +1,96 @@
+PLAN PRACY:
+==============================================================================================
+==============================================================================================
+
+1. Konfiguracja środowiska: 
+Upewnij się, że masz zainstalowane odpowiednie narzędzia i środowisko pracy. Skonfiguruj środowisko Pythona, npm lub yarn dla frontendu, a także bazę danych SQLite.
+
+2. Utworzenie projektu: 
+Stwórz główny katalog projektu, a w nim podkatalogi dla frontendu i backendu. Skonfiguruj odpowiednie pliki, takie jak package.json dla frontendu i requirements.txt dla backendu, aby określić zależności i środowisko dla projektu.
+
+3. Utworzenie szablonów stron: 
+Rozpocznij od utworzenia podstawowych szablonów stron, takich jak strona główna, logowanie, rejestracja i inne widoki, które będą potrzebne. Zdefiniuj również struktury komponentów, które będą wykorzystywane na stronach.
+
+4. Implementacja backendu: 
+Rozpocznij od implementacji backendu, tworząc kontrolery, modele, serwisy i trasy. Utwórz odpowiednie endpointy API, które będą obsługiwały żądania frontendu.
+
+5. Implementacja frontendu: 
+Rozpocznij pracę nad frontendem, implementując komponenty, strony i interakcje użytkownika. Wykorzystaj Redux do zarządzania stanem aplikacji, jeśli zdecydowałeś się na jego użycie.
+
+6. Testowanie i debugowanie: 
+Regularnie testuj aplikację, zarówno frontend, jak i backend, aby upewnić się, że wszystko działa poprawnie. Debuguj błędy i rozwiąż problemy, które mogą się pojawić podczas testowania.
+
+7. Integracja z Google Maps API: 
+Jeśli korzystasz z Google Maps API dla lokalizacji obiektów inżynieryjnych, skonfiguruj odpowiednie zapytania i integracje, aby wyświetlać mapy i dane lokalizacji na stronach.
+
+8. Dodawanie logiki dla zdarzeń: 
+Implementuj logikę dla elementów, takich jak przyciski, aby umożliwić użytkownikom interakcję z aplikacją.
+
+9. Dodawanie własnych stylów CSS: 
+Skorzystaj z folderu styles/custom.css w celu zdefiniowania własnych stylów CSS dla komponentów, które chcesz dostosować.
+
+10. Testowanie responsywności: 
+Sprawdź, czy aplikacja jest responsywna i dostosowuje się do różnych urządzeń, testując na różnych przeglądarkach i urządzeniach mobilnych.
+
+11. Dopracowanie detali: 
+Skoncentruj się na ulepszaniu interfejsu, zoptymalizowaniu wydajności i dostosowaniu aplikacji do potrzeb użytkowników.
+
+12. Wdrożenie: 
+Po zakończeniu prac nad aplikacją, przygotuj ją do wdrożenia na serwerze. Skonfiguruj serwer i postaw aplikację na serwerze, aby była dostępna publicznie.
+
+13. Monitorowanie i utrzymanie: 
+Po wdrożeniu aplikacji, regularnie monitoruj ją, aby upewnić się, że działa poprawnie. Rozwiązuj problemy, które mogą pojawić się po wdrożeniu i utrzymuj aplikację w dobrej kondycji.
+
+Ważne jest, aby podchodzić do projektu etapami i realizować go krok po kroku. Wcześniejsze etapy mogą wymagać dostosowania, więc nie obawiaj się wprowadzać zmian i udoskonaleń w miarę postępów w realizacji aplikacji. Regularne testowanie, debugowanie i współpraca zespołu programistycznego są kluczowe dla sukcesu projektu.
+
+
+
+PODPOWIEDZI:
+=============================================================================================
+=============================================================================================
+
+
+
+Ad.1 KONFIGARCJA NPM:
+=====================
+Aby skonfigurować środowisko pracy dla frontendu za pomocą npm, postępuj zgodnie z poniższymi krokami:
+
+Instalacja Node.js i npm:
+-------------------------
+Upewnij się, że na twoim systemie jest zainstalowane Node.js i npm (Node Package Manager). Możesz je pobrać i zainstalować ze strony oficjalnej Node.js: https://nodejs.org/
+
+Utworzenie nowego projektu:
+---------------------------
+Utwórz nowy katalog dla projektu frontendowego, a następnie w terminalu przejdź do tego katalogu. Możesz to zrobić za pomocą polecenia cd sciezka/do/katalogu.
+
+Inicjalizacja projektu:
+------------------------
+W katalogu projektu frontendowego wykonaj polecenie npm init, aby zainicjować nowy projekt npm. To spowoduje utworzenie pliku package.json, który będzie przechowywał informacje o twoim projekcie i jego zależnościach.
+
+Instalacja pakietów:
+--------------------
+Teraz możesz instalować potrzebne pakiety za pomocą npm. Na przykład, jeśli chcesz używać Reacta, zainstaluj go za pomocą polecenia npm install react lub npm install react react-dom, jeśli potrzebujesz również modułu react-dom. Analogicznie zainstaluj inne potrzebne pakiety.
+
+Dodanie skryptów:
+-----------------
+W pliku package.json znajdziesz sekcję scripts, gdzie możesz definiować własne skrypty do uruchamiania różnych zadań. Na przykład, aby uruchomić aplikację w trybie deweloperskim, możesz dodać skrypt "start": "react-scripts start" i uruchomić go za pomocą polecenia npm start.
+
+Konfiguracja webpacka (opcjonalnie) lub Parcel:
+------------------------------------
+Jeśli planujesz bardziej zaawansowane ustawienia projektu, możesz skonfigurować Webpack, aby dostosować sposób, w jaki twój projekt jest budowany i wdrażany. Więcej informacji na temat konfiguracji Webpacka znajdziesz w jego oficjalnej dokumentacji: https://webpack.js.org/
+
+Dodawanie własnych styli CSS:
+-----------------------------
+W folderze projektu utwórz folder styles i umieść w nim pliki CSS, które będą zawierały style dla twojej aplikacji. Następnie, w głównym pliku HTML (np. index.html), dodaj odnośnik do swojego pliku CSS, aby stylizować aplikację.
+
+Teraz, gdy masz skonfigurowane środowisko dla frontendu, możesz tworzyć swoje komponenty, strony i logikę wewnątrz projektu. 
+Pamiętaj, że możesz używać poleceń takich jak npm install do instalacji nowych zależności oraz npm start do uruchamiania aplikacji w trybie deweloperskim.
+
+Podczas pracy z npm możesz też korzystać z narzędzi takich jak Create React App, Vue CLI czy Angular CLI, które oferują prekonfigurowane szablony i ułatwiają start z nowym projektem frontendowym.
+
+
+
+
+
+
+
