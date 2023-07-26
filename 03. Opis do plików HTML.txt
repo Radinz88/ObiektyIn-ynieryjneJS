@@ -1,0 +1,39 @@
+W plikach HTML na frontendzie, w zależności od funkcjonalności i widoków aplikacji, powinny znaleźć się odpowiednie elementy i komponenty, które składają się na interfejs użytkownika. Poniżej przedstawiam przykładową strukturę plików HTML dla poszczególnych stron aplikacji frontendowej "Obiekty Inżynieryjne PLK":
+
+1. Strona główna (index.html):
+   - Główny nagłówek i logo aplikacji.
+   - Sekcja prezentująca ogólne informacje o aplikacji.
+   - Sekcja zawierająca listę linii kolejowych lub innych treści.
+
+2. Strona rejestracji (register.html):
+   - Formularz rejestracji z polami: nazwa użytkownika, adres e-mail i hasło.
+   - Przycisk "Zarejestruj się" do wysłania formularza rejestracji.
+   - Przycisk lub odnośnik prowadzący do strony logowania.
+
+3. Strona logowania (login.html):
+   - Formularz logowania z polami: nazwa użytkownika i hasło.
+   - Przycisk "Zaloguj się" do wysłania formularza logowania.
+   - Przycisk lub odnośnik prowadzący do strony rejestracji.
+
+4. Panel użytkownika (user_panel.html):
+   - Powitanie użytkownika z jego nazwą i typem użytkownika (np. "Witaj, John | Użytkownik").
+   - Przycisk "Zmień hasło" lub odnośnik do strony zmiany hasła.
+   - Przycisk "Edytuj dane" lub odnośnik do strony edycji danych osobowych.
+   - Przycisk "Wyloguj się" do wylogowania użytkownika.
+
+5. Nawigacja na komputerach PC (pc_navigation.html):
+   - Lista rozwijana typu 'drzewo' lub drzewo menu bocznego z dostępnymi liniami kolejowymi i obiektami inżynieryjnymi.
+   - Skrypt do obsługi interakcji z listą rozwijaną i wybierania obiektów.
+
+6. Nawigacja na urządzeniach mobilnych (mobile_navigation.html):
+   - Boczne menu typu hamburger z dostępnymi liniami kolejowymi.
+   - Skrypt do obsługi interakcji z menu hamburgera i wybierania obiektów.
+
+7. Strona karty obiektu (object_card.html):
+   - Nagłówek z tytułem obiektu inżynieryjnego.
+   - Zdjęcie obiektu inżynieryjnego.
+   - Sekcja z parametrami technicznymi i opisem stanu technicznego.
+   - Sekcja z zaznaczoną lokalizacją obiektu na mapie Google.
+   - Sekcja komentarzy.
+
+Uwaga: Powyższa struktura to jedynie przykład, w rzeczywistości w zależności od projektu i używanych narzędzi, organizacja plików HTML może być inna. Warto także rozważyć użycie szablonów, które pozwolą na lepsze zarządzanie i współdzielenie często używanych fragmentów interfejsu użytkownika.
