@@ -1,41 +1,122 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="pl">
     <head>
         <meta charset="utf-8">
-        <title>Ekran powitalny</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="mosty, mostowa, budowa mostów, konstrukcje mostowe, inżynieria budowlana">
+        <title>MostyIZB_home</title>
+        <link rel="stylesheet" href="style.css">
     </head>
 
     <body>
-        <section id="menu">
-            <a href="login" class="login-icon"><i class="fas fa-sign-in-alt"></i></a>
-            <a href="register" class="register-icon"><i class="fas fa-user-plus"></i></a>
+        <section id="loginBar"> 
+            <img id="logo" class="box box1" src="images/logo1.png" alt="logo" width="60">
+            <header class="box box2" >MOSTY IZ BYDGOSZCZ</header>
+            <aside id="header" class="box box3" >| LOKALNY PORTAL BRANŻOWY</aside>
+            <select id="lang">
+                <option value="pl" data-icon="icons/poland-flag-icon.svg">PL</option>
+                <option value="en" data-icon="icons/united-kingdom-flag-icon.svg">EN</option>
+            </select>
+            <button class="box box4" >
+                <img id="login" src="icons/circle-user-regular.svg" alt="login" width="20">
+                <span id=login>Zaloguj</span>
+            </button>
         </section>
+
+        <section id="bridgeIMG">
+            <img id="bridgeIMG" src="images/mostMalinowskiego4.png" alt="LK353MostMalinowskiego">
+        </section>
+        <div id="menuBar">
+            <section id="menuBar">
+                <button class="menuBar">HOME</button>
+                <button class="menuBar">AKTUALNOŚCI</button>
+                <button class="menuBar">FORUM</button>
+                <button class="menuBar">LITERATURA</button>
+                <button class="menuBar">SKLEP</button>
+                <button class="menuBar">KONTAKT</button>
+            </section>
+        </div>
+        
         <section id="mainPage">
-            <h1>Zakład Linii Kolejowych w Bydgoszczy</h1>
-            <h2>Sekcja Kolejowych Obiektów Inżynieryjnych IZ Bydgoszcz</h2>
-            <h3>Zespół diagnostyczny ds. obiektów inżynieryjnych IZ13DKO</h3>
-            <img src="mapa1.png" alt="mapa">
+            <article id="map">
+                <div id="mapHeader">
+                    <dt class="super">Linie kolejowe</dt>
+                    WOJ. KUJAWSKO-POMORSKIE
+                </div>
+                <img id="map" src="images/mapa1.png" alt="mapa">
+                <ul id="lk">
+                    <li>Lk18 Kutno - Piła</li>
+                    <li>Lk27 Nasielsk - Toruń Wschodni</li>
+                    <li>Lk33 Kutno - Brodnica</li>
+                    <li>Lk207 Toruń Wschodni - Malbork</li>
+                    <li>Lk208 Działdowo - Chojnice</li>
+                    <li>Lk209 Chełmża - Bydgoszcz Wschód</li>
+                    <li>Lk245 Aleksandrów Kuj. - Ciechocinek</li>
+                    <li>Lk246 Toruń Wschodni - Olek</li>
+                    <li>Lk353 Poznań Wschód - Skandawa</li>
+                </ul>
+            </article>
+            
             <article id="intro">
+                <dt class="super">Czy wiesz, że ...</dt>
                 <p>
-                    W portalu sprawdzisz:
-                    <ul>
-                        <li>listę ewidencyjną wszystkich obiektów inżynieryjnych znajdująch się w Zakładzie Linii Kolejowych w Bydgoszczy,</li>
-                        <li>obiekty inżynieryjne znajdujące się na wybranej linii kolejowej w obrębie IZ Bydgoszcz,</li>
-                        <li>stan techniczny obiektów inżynieryjnych, a także oficjalne statystyki dla linii kolejowych, ISE oraz IZ,</li>
-                        <li>paramtery techniczne tychże obiektów oraz sprawdzisz planowane prace remontowe lub konserwacyjne,</li>
-                        <li>aktualne protokoły z kontroli stanu technicznego obiektów inżynieryjnych, a za pomocą kreatora będziesz mógł również dodać, zaktualizować lub utworzyć nowe raporty stanu technicznego.</li>
-                    </ul>
-                    Podsumowując dowiesz się wszystkiego na temat obiektów inżynieryjnych znajdujących się w zarządzie IZ Bydgoszcz.
-                    Portal stanowi bazę wiedzy opartą na aktualnych protokołach okresowych i specjalnych z przeglądów stanu technicznego kolejowych obiektów inżynieryjnych oraz informacji z baz danych przekazanych przez Użytkownika. 
-                    Stanowi wsparcie na Projektantów, Inspektorów, Diagnostów oraz Kadry Zarządzającej.
+                    W zarządzie Zakładu Linii Kolejowych w Bydgoszczy znajduje się ok. 1550 obiektów inżynieryjnych. Położone 
+                    są głównie na terenie województwa kujawsko pomorskiego, ale część z tych obiektów znajduje się również 
+                    w obrębie województw: mazowieckiego, wielkopolskiego i pomorskiego.
+                </p>
+                <p>
+                    Średni wiek typowego obiektu mostowego znacząco przekracza 70 lat, dlatego ich stan techniczny jest na 
+                    bieżąco monitorowany. Co roku powstaje setki opracowań na ten temat, a najtrudniejsze przypadki
+                    są opisywane szczegółowo w tzw. 'przeglądach specjalnych'.
+                </p>
+                <p>
+                    W skład tych 1550 kolejowych obiektów inżynieryjnych wchodzi 145 mostów, 134 wiadukty, 12 przejść pod torami w tym
+                    część z nich o konstrukcji tunelowej, a także ponad 1200 innego rodzaju obiektów jak przepusty, ściany 
+                    oporowe i kładki dla pieszych.
                 </p>
             </article>
 
-            <article id="disclaimer">
-                Wszystkie funkcjonalności portalu dostępne są tylko dla zalogowanych użytkowników.
+            <article id="mainText">
+                <dt class="super">W portalu znajdziesz:</dt> 
+                <ul id="portalFunctions">
+                    <li>listę wszystkich obiektów inżynieryjnych znajdująch się w Zakładzie Linii Kolejowych w Bydgoszczy,</li>
+                    <li>opisy stanu technicznego obiektów,</li>
+                    <li>analizy statystyczne,</li>
+                    <li>informacje o paramterach technicznych tychże obiektów</li> 
+                    <li>informacje o planowanych inwestycjach i remontach</li>
+                    <li>
+                        aktualne protokoły z kontroli stanu technicznego obiektów inżynieryjnych, a za pomocą kreatora będziesz mógł 
+                        również dodać, zaktualizować lub utworzyć nowe protokoły zgodne z Id-16 (tylko dla osób z nadanymi specjalnymi
+                        uprawnieniami),
+                    </li>
+                    <li>oraz wiele innych opracowań i analiz, które będą udostępniane wraz z rozbudową portalu.</li>
+                </ul>
+                <p>
+                    Podsumowując dowiesz się wszystkiego na temat obiektów inżynieryjnych znajdujących się w zarządzie IZ Bydgoszcz.
+                    Portal stanowi bazę wiedzy opartą na aktualnych sprawozdaniach i raportach technicznych oraz informacji z baz danych 
+                    przekazanych przez Użytkownika. <br>
+                    Stanowi wsparcie na Projektantów, Wykonawców, Inspektorów, Diagnostów oraz Kadry Zarządzającej.
+                </p>
+                </article>
+
+            <article id="twitter">
+                Nasze media społecznościowe:
+                <img id="twit" src="icons/Logo_of_Twitter.svg" alt="twitter">
+                Napiszcie do Nas na @MostyIZB!
             </article>
 
+            <article id="wwwRecommendations">
+                Polecane strony internetowe:
+                <button>Atlas kolejowy</button>
+                <button>PKP PLK</button>
+                <button>Rynek kolejowy</button>
+                <button>Rynek infrastruktury</button>
+                <button>WNP.PL</button>
+            </article>
         </section>
+        <footer id="disclaimer">
+            Wszystkie funkcjonalności portalu dostępne są tylko dla zalogowanych użytkowników.
+        </footer>
     </body>
 </html>
