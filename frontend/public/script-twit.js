@@ -1,0 +1,2 @@
+const twitterWidget = getElementById('widgetTwit');
+
