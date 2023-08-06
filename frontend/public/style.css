@@ -76,13 +76,18 @@ article#mainText{
 }
 
 article#map{
-    background-color: aquamarine;
-    border-radius: 2rem;
     margin: 8px;
-    font-size: 0.875rem;
     grid-column: 1 / 2;
     grid-row: 1 / 4;
 }
+
+div#mapBorder{
+    background-color: aquamarine;
+    border-radius: 2rem;
+    max-height: fit-content;
+    font-size: 0.875rem;
+}
+
 article#twitter{
     grid-column: 3 / 4;
     grid-row: 1 / 3;
