@@ -1,7 +1,7 @@
 /*Stylowanie wg TAGÓW*/
 body{
     font-family: sans-serif;
-    min-width: 37rem;
+    min-width: 600px;
 }
 
 header{
@@ -57,13 +57,13 @@ p{
 /*Stylowanie wg ID tagów*/
 article#intro{
     grid-column: 2 / 3;
-    grid-row: 1 / 2;
+    grid-row: 1 / 3;
     border: 1px solid blue;
 }
 
 article#mainText{
     grid-column: 2 / 3;
-    grid-row: 2 / 3;
+    grid-row: 3 / 4;
     border: 1px solid red;
 }
 
@@ -71,11 +71,23 @@ article#map{
     background-color: aquamarine;
     border-radius: 2rem;
     margin: 0.5rem;
+    font-size: 0.875rem;
+    grid-column: 1 / 2;
+    grid-row: 1 / 4;
+    border: 1px solid green;
+}
+article#twitter{
+    grid-column: 3 / 4;
+    grid-row: 1 / 4;
+    max-width: 100% !important;
+    max-height: 100% !important;
 }
 
 article#wwwRecommendations{
     display: flex;
-    flex-wrap: wrap;
+    grid-column: 3 / 4;
+    grid-row: 4 / 5;
+    max-width: 100% !important;
 }
 
 aside#header{
@@ -97,15 +109,18 @@ div#menuBar{
     border-bottom: 1px solid black;
 }
 
-div#widgetTwit{
-    max-width: 90% !important;
-    height: 20rem !important;
-}
-
 footer#disclaimer{
+    display: block;
     width: 100%;
     text-align: center;
     font-style: italic;
+    background-color: white;  
+    border-top: 1px solid black;  
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    bottom: 0;
+    left:0;
 }
 
 img#bridgeIMG {
@@ -123,13 +138,6 @@ img#logo{
     max-height: 1.5rem;
     margin-inline: 1rem;
     margin-top: 0.2rem;
-}
-
-article#map{
-    font-size: 0.875rem;
-    grid-column: 1 / 2;
-    grid-row: 1 / 3;
-    border: 1px solid green;
 }
 
 img#map{
@@ -157,7 +165,7 @@ section#mainPage{
     display: grid;
     width: 100%;
     grid-template-columns: 25% 55% 20%;
-    grid-template-rows: minmax(20rem, 20rem) auto auto;
+    /*grid-template-rows: minmax(0rem, 20rem) auto auto;*/
 }
 
 section#menuBar{
