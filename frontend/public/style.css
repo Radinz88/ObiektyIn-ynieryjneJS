@@ -1,7 +1,9 @@
 /*Stylowanie wg TAGÓW*/
 body{
+    display: block;
     font-family: sans-serif;
     min-width: 600px;
+    margin-inline: 20px;
 }
 
 header{
@@ -24,16 +26,16 @@ p{
     border: 1px solid black;
     background: linear-gradient(to top right, lightblue, white);
 
-    border-radius: 1.25rem;
+    border-radius: 20px;
 
-    padding-top: 0.2rem;
-    padding-inline: 0.75rem;
-    margin-right: 1rem;
+    padding-top: 3px;
+    padding-inline: 12px;
+    margin-right: 16px;
 }
 
 .menuBar{
     border: none;
-    height: 2rem;
+    height: 32px;
     flex-grow: 1 1 auto;
     background-color: white;
     color: grey;
@@ -48,46 +50,51 @@ p{
     text-decoration: underline;
 }
 
+.recoIMGs{
+    display: block;
+    max-width: 320px;
+    margin-inline: 16px;
+    margin-top: 4px;
+}
+
 .super{
     font-family: impact;
     font-size: 1.5rem;
-    margin: 0.5rem;
+    margin: 8px;
 }
 
 /*Stylowanie wg ID tagów*/
 article#intro{
     grid-column: 2 / 3;
-    grid-row: 1 / 3;
-    border: 1px solid blue;
+    grid-row: 3 / 4;
+    padding: 4px;;
 }
 
 article#mainText{
     grid-column: 2 / 3;
-    grid-row: 3 / 4;
-    border: 1px solid red;
+    grid-row: 1 / 3;
 }
 
 article#map{
     background-color: aquamarine;
     border-radius: 2rem;
-    margin: 0.5rem;
+    margin: 8px;
     font-size: 0.875rem;
     grid-column: 1 / 2;
     grid-row: 1 / 4;
-    border: 1px solid green;
 }
 article#twitter{
     grid-column: 3 / 4;
-    grid-row: 1 / 4;
-    max-width: 100% !important;
-    max-height: 100% !important;
+    grid-row: 1 / 3;
+    width: 90%;
 }
 
 article#wwwRecommendations{
-    display: flex;
+    display: block;
     grid-column: 3 / 4;
-    grid-row: 4 / 5;
-    max-width: 100% !important;
+    grid-row: 3 / 4;
+    margin:8px;
+    padding: 8px;
 }
 
 aside#header{
@@ -104,10 +111,26 @@ div#mapHeader{
 div#menuBar{
     display: flex;
     justify-content: center;
-    height: 2.5rem;
+    height: 40px;
     width: 100%;
     border-bottom: 1px solid black;
 }
+
+div#objectsIMG{
+    display: block;
+}
+
+div#objectsIMG img{
+    max-width: 100%;
+    min-width: 300px;
+}
+
+dt#h3{
+    font-size: 1.17rem;
+    font-weight: lighter;
+    font-family: impact;
+}
+
 
 footer#disclaimer{
     display: block;
@@ -126,18 +149,18 @@ footer#disclaimer{
 img#bridgeIMG {
     max-width: 100%;
     border: 2px solid black;
-    margin-top: 2rem;
+    margin-top: 32px;
 }
 
 img#login{
-    height: 1.25rem;
-    margin-right: 0.25rem;
+    height: 20px;
+    margin-right: 4px;
 }
 
 img#logo{
-    max-height: 1.5rem;
-    margin-inline: 1rem;
-    margin-top: 0.2rem;
+    max-height: 24px;
+    margin-inline: 16px;
+    margin-top: 3px;
 }
 
 img#map{
@@ -147,7 +170,7 @@ img#map{
 
 section#loginBar{
     display: flex;
-    height: 2.5rem;
+    height: 40px;
     width: 100%;
     line-height: 1.5rem;
     align-items: center;
@@ -158,28 +181,28 @@ section#loginBar{
     top:0;
     left:0;
     border-bottom: 1px solid black;
-    min-width: 37rem;
+    min-width: 600px;
 }
 
 section#mainPage{
     display: grid;
     width: 100%;
-    grid-template-columns: 25% 55% 20%;
-    /*grid-template-rows: minmax(0rem, 20rem) auto auto;*/
+    grid-template-columns: 25% 50% 25%;
+    gap: 10px;
 }
 
 section#menuBar{
     display: flex;
     justify-content: space-between;
-    height: 2rem;
-    min-width: 37rem;
-    width: 70rem;
-    margin-inline: 2rem;
+    height: 32px;
+    min-width: 600px;
+    width: 70%;
+    margin-inline: 32px;
 }   
 
 select#lang{
-    margin: 0.5rem;
-    padding: 0.25rem;
+    margin: 8px;
+    padding: 4px;
 }
 
 span#login{
@@ -190,8 +213,8 @@ span#login{
 
 ul#lk{
     text-indent: 0;
-    margin-right: 0.5rem;
-    margin-left: 1.25rem;
+    margin-right: 4px;
+    margin-left: 20px;
     padding-inline: 0;
 }
 
