@@ -1,12 +1,10 @@
-import logo from './logo.svg';
 import './App.css';
+import LoginBar from './components/mainPage/LoginBar';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-
-      </header>
+      <LoginBar/>
     </div>
   );
 }
