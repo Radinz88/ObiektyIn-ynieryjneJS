@@ -1,14 +1,15 @@
-import React from "react";
+import React, {useState} from "react";
 import logo from "../../assets/images/logo1.png";
 import flagPL from "../../assets/icons/poland-flag-icon.svg"
 import flagUK from "../../assets/icons/united-kingdom-flag-icon.svg"
 import logIcon from "../../assets/icons/circle-user-regular.svg"
+import './LoginBar.css';
 
 
 // Komponent reprezentujący logo
 function Logo() {
   return (
-    <img className="box box1" src={logo} alt="Logo IZB-Mosty" width="60" />
+    <img className="box1" src={logo} alt="Logo IZB-Mosty" width="60" />
   );
 }
 
@@ -16,40 +17,67 @@ function Logo() {
 function Header() {
   return (
     <div>
-        <header className="box box2">MOSTY IZ BYDGOSZCZ</header>
-        <aside id="header" className="box box3">| LOKALNY PORTAL BRANŻOWY</aside>
+        <span className="box2">MOSTY IZ BYDGOSZCZ</span>
+        <span className="box3">| LOKALNY PORTAL BRANŻOWY</span>
     </div>
   );
 }
 
 // Komponent reprezentujący wybór języka
 function LanguageSelect() {
+  const [selectedLanguage, setSelectedLanguage] = useState('pl'); // Stan języka
+
+  const handleLanguageChange = (language) => {
+    setSelectedLanguage(language);
+
+    // !!!
+    // Tu trzeba dorobić zmianę tłumaczenia strony z PL na EN i na zad, może wykorzystać wbudowane moduły przeglądarki?
+    // !!!
+
+  };
+
   return (
-    <select id="lang">
-      <option value="pl" data-icon={flagPL} alt="PL"></option>
-      <option value="en" data-icon={flagUK} alt="EN"></option>
-    </select>
+    <div className="language-select">
+      <div className={`flag ${selectedLanguage === 'pl' ? 'active' : ''}`} onClick={() => handleLanguageChange('pl')}>
+        <img src={flagPL} alt="PL" />
+      </div>
+      <div className={`flag ${selectedLanguage === 'en' ? 'active' : ''}`} onClick={() => handleLanguageChange('en')}>
+        <img src={flagUK} alt="EN" />
+      </div>
+    </div>
   );
 }
 
-// Komponent reprezentujący przycisk logowania
+
+// Komponenty reprezentujące przycisk logowania
 function LoginButton() {
   return (
-    <button className="box box4">
+    <button className="box4">
       <img id="login" src={logIcon} alt="Ikona użytkownika" width="20" />
       <span id="login">Zaloguj</span>
     </button>
   );
 }
 
+function HamburgerMenu() {
+  return (
+    <div className="hamburger-menu">
+      <div className="bar"></div>
+      <div className="bar"></div>
+      <div className="bar"></div>
+    </div>
+  );
+}
+
 // Główny komponent LoginBar, który używa powyższych komponentów
 function LoginBar() {
   return (
-    <div>
+    <div id="LoginBar">
       <Logo />
       <Header />
       <LanguageSelect />
       <LoginButton />
+      <HamburgerMenu />
     </div>
   );
 }

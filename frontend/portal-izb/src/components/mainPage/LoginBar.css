@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@200&family=Comfortaa:wght@500;700&family=Montserrat&display=swap');
+
+div#LoginBar{
+    display: flex;
+    justify-content: space-between;
+    height: 37px;
+    width: 100%;
+    min-width: 310px;
+    background-color: white;    
+    position: fixed;
+    margin: 0;
+    padding: 5px;
+    top:0;
+    left:0;
+    border-bottom: 1px solid black;
+}
+
+#lang{
+    height: 30px;
+}
+
+.language-select {
+    display: flex;
+    margin: 0;
+    padding-top: 10px;
+}
+  
+.flag {
+    cursor: pointer;
+    margin-right: 10px;
+    opacity: 0.5;
+    transition: opacity 0.2s ease;
+
+}
+  
+.flag img {
+    width: 30px; /* Dostosuj rozmiar flagi według swoich potrzeb */
+    height: auto;
+    border: 1px solid black;
+}
+  
+.flag.active {
+    opacity: 1;
+}
+
+.box1{
+    margin-left: 20px;
+    width: 60px;
+}
+
+.box2{
+    font-family: 'Comfortaa';
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.box3{
+    font-family: 'Bricolage Grotesque', 'Montserrat';
+    font-size: 1.25rem;
+    font-weight: lighter;
+}
+
+.hamburger-menu{
+    display: none;
+}
+
+@media only screen and (max-width: 850px){
+    div#LoginBar{
+        height: 28px;
+        width: 100%;
+        background-color: white;    
+        position: fixed;
+        top:0;
+        left:0;
+        border-bottom: 1px solid black;
+    }
+
+    .box1{
+        margin-inline: 10px;
+        width: 50px;
+    }
+
+    .box2{
+        font-size: 1.0rem;
+    }
+    
+    .box3{
+        font-size: 1.0rem;
+    }
+}
+
+@media only screen and (max-width: 740px){
+    .box3{
+        display: none;
+    }
+}
+
+
+@media only screen and (max-width: 590px){
+
+    .box4{
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: flex;
+        flex-direction: column;
+        margin-right: 10px;
+        cursor: pointer;
+        width: 25px;
+        height: 20px;
+        justify-content: space-between;
+    }
+      
+    .bar {
+        width: 100%;
+        height: 4px;
+        background-color: #7f7676; 
+        transition: 0.4s;
+    }
+
+    .language-select{
+        display: none;
+    }
+}
