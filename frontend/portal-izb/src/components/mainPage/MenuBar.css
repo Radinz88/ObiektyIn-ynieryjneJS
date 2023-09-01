@@ -1,0 +1,40 @@
+.menuBar{
+    border: none;
+    width: 90%;
+    height: 32px;
+    background-color: white;
+    color: grey;
+    transition: color 0.3s;
+    font-size: 1.5rem;
+    font-family: impact;
+    font-weight: 100;
+}
+
+.menuBar:hover{
+    color: blue;
+    text-decoration: underline;
+}
+
+section#menuBar{
+    display: flex;
+    justify-content: space-between;
+    height: 32px;
+    margin-inline: 32px;
+}   
+
+
+@media screen and (max-width: 768px){
+    section#menuBar{
+        height: 28px;
+    }
+
+    .menuBar{
+        font-size: 1.25rem;
+    }
+}
+
+@media screen and (max-width: 590px){
+    section#menuBar{
+        display: none;
+    }
+}
