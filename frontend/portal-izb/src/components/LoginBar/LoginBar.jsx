@@ -1,9 +1,9 @@
 import React, {useState} from "react";
-import logo from "../../assets/images/logo1.png";
-import flagPL from "../../assets/icons/poland-flag-icon.svg"
-import flagUK from "../../assets/icons/united-kingdom-flag-icon.svg"
-import logIcon from "../../assets/icons/circle-user-regular.svg"
+import logo from "../assets/images/logo1.png";
+import flagPL from "../assets/icons/poland-flag-icon.svg";
+import flagUK from "../assets/icons/united-kingdom-flag-icon.svg";
 import './LoginBar.css';
+import LoginButton from "./LoginButtonModalPopup";
 
 
 // Komponent reprezentujący logo
@@ -45,17 +45,6 @@ function LanguageSelect() {
         <img src={flagUK} alt="EN" />
       </div>
     </div>
-  );
-}
-
-
-// Komponenty reprezentujące przycisk logowania
-function LoginButton() {
-  return (
-    <button className="box4">
-      <img id="login" src={logIcon} alt="Ikona użytkownika" width="20" />
-      <span id="login">Zaloguj</span>
-    </button>
   );
 }
 

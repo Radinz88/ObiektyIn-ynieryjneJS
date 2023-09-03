@@ -1,7 +1,12 @@
 import './App.css';
-import LoginBar from './components/mainPage/LoginBar';
-import MainImage from './components/mainPage/MainImage';
-import MenuBar from './components/mainPage/MenuBar';
+import LoginBar from './components/LoginBar';
+import MainImage from './components/MainImage';
+import MenuBar from './components/MenuBar';
+import MainPage from './components/Home/MainPage';
+
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.min.js';
+
 
 function App() {
   return (
@@ -9,6 +14,7 @@ function App() {
       <LoginBar />
       <MainImage />
       <MenuBar />
+      <MainPage />
     </div>
   );
 }
