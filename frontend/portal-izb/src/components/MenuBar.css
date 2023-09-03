@@ -18,7 +18,7 @@
 section#menuBar{
     display: flex;
     justify-content: space-between;
-    height: 32px;
+    height: 38px;
     margin-inline: 32px;
 }   
 

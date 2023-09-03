@@ -1,0 +1,57 @@
+.blueText{
+    font-weight: bold;
+    color: blue;
+}
+
+#centeredText {
+    color: darkgrey;
+    width: 100vh !important;
+    text-align: center !important;
+}
+
+.submitButton{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+h2{
+    font-size: 24px;
+    font-weight: bold;
+    width: 100vh;
+    text-align: left;
+}
+
+
+.box4{
+    display: flex;
+
+    height: 28px;
+    width: max-content;
+
+    border: 1px solid black;
+    background: linear-gradient(to top right, lightblue, white);
+  
+    border-radius: 20px;
+    padding: 0 12px 0 12px;
+    margin: 3px 24px 0px 0px;
+}
+
+#loginText{
+    vertical-align: top;
+    font-size: 18px;;
+    color: rgb(105, 94, 94);
+}
+
+#loginIMG{
+    height: 20px;
+    margin: 3px 4px 0 0;
+}
+
+
+@media only screen and (max-width: 850px){
+    .box4{
+        margin: 1px 24px 0 0;
+        height: 26px;
+    }
+}

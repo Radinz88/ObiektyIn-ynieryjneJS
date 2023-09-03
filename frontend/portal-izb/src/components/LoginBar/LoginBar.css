@@ -2,17 +2,20 @@
 
 div#LoginBar{
     display: flex;
+    white-space: nowrap;
     justify-content: space-between;
-    height: 37px;
-    width: 100%;
+    align-content: center;
+    height: 34px;
+    width: 100vw;
     min-width: 310px;
     background-color: white;    
     position: fixed;
     margin: 0;
-    padding: 5px;
+    padding: 0;
     top:0;
     left:0;
     border-bottom: 1px solid black;
+    overflow: hidden;
 }
 
 #lang{
@@ -26,6 +29,7 @@ div#LoginBar{
   
 .flag {
     cursor: pointer;
+    margin-top: 3px;
     margin-right: 10px;
     opacity: 0.5;
     transition: opacity 0.2s ease;
@@ -60,14 +64,16 @@ div#LoginBar{
     font-weight: lighter;
 }
 
+
+.textBlock{
+    margin-top: 5px;
+}
+
 .hamburger-menu{
     display: none;
 }
 
-img#login{
-    height: 20px;
-    margin-right: 4px;
-}
+
   
 img#logo{
     max-height: 24px;
@@ -75,34 +81,16 @@ img#logo{
     margin-top: 3px;
 }
 
-span#login{
-    vertical-align: top;
-    font-size: 1.17rem;
-    color: rgb(105, 94, 94);
-}
 
 .box3{
     flex: 3 1 auto;
 }
-  
-.box4{
-    font-family: sans-serif;
-    font-size: 1.17rem;
-  
-    border: 1px solid black;
-    background: linear-gradient(to top right, lightblue, white);
-  
-    border-radius: 20px;
-  
-    padding-top: 3px;
-    padding-inline: 12px;
-    margin-right: 16px;
-}
+
   
 
 @media only screen and (max-width: 850px){
     div#LoginBar{
-        height: 28px;
+        height: 30px;
         width: 100%;
         background-color: white;    
         position: fixed;
@@ -123,6 +111,14 @@ span#login{
     .box3{
         font-size: 1.0rem;
     }
+
+    .flag{
+        margin-top: 1px;
+    }
+
+    #lang{
+        height: 26px;
+    }
 }
 
 @media only screen and (max-width: 740px){
@@ -134,14 +130,14 @@ span#login{
 
 @media only screen and (max-width: 590px){
 
-    .box4{
+    .login-button{
         display: none;
     }
 
     .hamburger-menu {
         display: flex;
         flex-direction: column;
-        margin-right: 10px;
+        margin: 5px 10px 0 0;
         cursor: pointer;
         width: 25px;
         height: 20px;

@@ -1,8 +1,10 @@
-import React  from 'react';
+import React, {useState}  from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import logIcon from "../../assets/icons/circle-user-regular.svg";
 import LoginForm from './LoginForm';
+import SignInForm from './SignInForm';
+import './LoginButtonModal.css';
 
 function MyVerticallyCenteredModal(props) {
   return (
@@ -14,12 +16,28 @@ function MyVerticallyCenteredModal(props) {
     >
       <Modal.Header closeButton>
         <Modal.Title id="contained-modal-title-vcenter">
-          Zaloguj się
+          <div id='centeredText'>
+            Zaloguj się lub zarejestruj
+          </div>
         </Modal.Title>
       </Modal.Header>
+
       <Modal.Body>
 
-        <LoginForm />
+      {props.showLogin ? <LoginForm /> : <SignInForm />}
+
+      <label>
+        {props.showLogin ? (
+          <div>
+            Jeśli nie masz jeszcze konta w serwisie{' '}
+            <span className="blueText" onClick={props.toggleForm}>zarejestruj się</span>.
+          </div>
+        ) : (
+          <div>
+            Masz już konto? <span className="blueText" onClick={props.toggleForm}>Zaloguj się</span>.
+          </div>
+        )}
+      </label>
 
       </Modal.Body>
       <Modal.Footer>
@@ -29,22 +47,31 @@ function MyVerticallyCenteredModal(props) {
   );
 }
 
+
+
 function LoginButton() {
   const [modalShow, setModalShow] = React.useState(false);
+  const [showLogin, setShowLogin] = useState(true);
+
+  const toggleForm = () => {
+    setShowLogin(!showLogin);
+  };
 
   return (
     <div>
-      <Button className="box4" variant="primary" onClick={() => setModalShow(true)}>
-        <img id="login" src={logIcon} alt="Ikona użytkownika" width="20" />
-        <span id="login">Zaloguj</span>
-      </Button>
+      <button className="box4" onClick={() => setModalShow(true)}      >
+        <img id="loginIMG" src={logIcon} alt="Ikona użytkownika" width="20" />
+        <div  id="loginText" type="text">Zaloguj</div>
+      </button>
 
       <MyVerticallyCenteredModal
         show={modalShow}
         onHide={() => setModalShow(false)}
+        showLogin={showLogin}
+        toggleForm={toggleForm}
       />
     </div>
-  );
+  )
 }
 
 export default LoginButton;

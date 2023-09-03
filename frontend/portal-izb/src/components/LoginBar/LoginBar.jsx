@@ -4,6 +4,7 @@ import flagPL from "../../assets/icons/poland-flag-icon.svg";
 import flagUK from "../../assets/icons/united-kingdom-flag-icon.svg";
 import './LoginBar.css';
 import LoginButton from "./LoginButtonModalPopup";
+import HamburgerMenu from "./HamburgerMenu";
 
 
 // Komponent reprezentujący logo
@@ -16,7 +17,7 @@ function Logo() {
 // Komponent reprezentujący nagłówek
 function Header() {
   return (
-    <div>
+    <div className="textBlock">
         <span className="box2">MOSTY IZ BYDGOSZCZ</span>
         <span className="box3">| LOKALNY PORTAL BRANŻOWY</span>
     </div>
@@ -48,15 +49,7 @@ function LanguageSelect() {
   );
 }
 
-function HamburgerMenu() {
-  return (
-    <div className="hamburger-menu">
-      <div className="bar"></div>
-      <div className="bar"></div>
-      <div className="bar"></div>
-    </div>
-  );
-}
+
 
 // Główny komponent LoginBar, który używa powyższych komponentów
 function LoginBar() {
@@ -65,7 +58,9 @@ function LoginBar() {
       <Logo />
       <Header />
       <LanguageSelect />
-      <LoginButton />
+      <div className="login-button">
+        <LoginButton />
+      </div>
       <HamburgerMenu />
     </div>
   );
