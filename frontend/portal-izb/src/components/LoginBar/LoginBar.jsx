@@ -1,7 +1,7 @@
 import React, {useState} from "react";
-import logo from "../assets/images/logo1.png";
-import flagPL from "../assets/icons/poland-flag-icon.svg";
-import flagUK from "../assets/icons/united-kingdom-flag-icon.svg";
+import logo from "../../assets/images/logo1.png";
+import flagPL from "../../assets/icons/poland-flag-icon.svg";
+import flagUK from "../../assets/icons/united-kingdom-flag-icon.svg";
 import './LoginBar.css';
 import LoginButton from "./LoginButtonModalPopup";
 
