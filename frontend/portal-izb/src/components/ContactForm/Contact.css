@@ -1,0 +1,10 @@
+#contactForm{
+    width: 50%;
+    margin: 30px auto auto auto;
+}
+
+#btn{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}

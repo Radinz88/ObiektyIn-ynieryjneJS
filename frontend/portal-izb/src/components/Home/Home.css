@@ -11,15 +11,26 @@
 
 
 /*Komponent Map*/
-#mapSection{
-    margin: 8px;
+
+.mapComponent{
+    width: 90%;
+    justify-content: center;
+    margin-inline: auto;
     grid-column: 1 / 2;
     grid-row: 1 / 4;
-    background-color: aquamarine;
-    border-radius: 2rem;
-    max-height: fit-content;
+
+
+}
+
+div#mapSection{
     font-size: 0.875rem;
     font-family: 'Bricolage Grotesque';
+    background-color: aquamarine;
+    padding: 8px;
+    border-radius: 2rem;
+    font-size: 0.875rem;
+    max-height: 100%;
+    overflow: hidden;
 }
 
 #mapHeader{
