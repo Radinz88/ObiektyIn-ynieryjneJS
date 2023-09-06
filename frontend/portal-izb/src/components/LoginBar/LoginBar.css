@@ -9,13 +9,12 @@ div#LoginBar{
     width: 100vw;
     min-width: 310px;
     background-color: white;    
-    position: fixed;
+    position: relative;
     margin: 0;
     padding: 0;
     top:0;
     left:0;
     border-bottom: 1px solid black;
-    overflow: hidden;
 }
 
 #lang{
@@ -134,16 +133,11 @@ img#logo{
         display: none;
     }
 
-    .hamburger-menu {
-        display: flex;
-        flex-direction: column;
-        margin: 5px 10px 0 0;
-        cursor: pointer;
-        width: 25px;
-        height: 20px;
-        justify-content: space-between;
+    .language-select{
+        display: none;
     }
-      
+
+    /*Hamburger Menu*/
     .bar {
         width: 100%;
         height: 4px;
@@ -151,7 +145,44 @@ img#logo{
         transition: 0.4s;
     }
 
-    .language-select{
-        display: none;
+    .hamburger-menu {
+        display: inline-block; /* Upewnij się, że pasek jest widoczny w jednej linii */
+        position: relative;
     }
+
+    .bars{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 25px;
+        height: 20px;
+        margin: 5px 10px 0 0;
+        cursor: pointer;
+    }
+
+  
+    /* Styl dla rozwijanej listy */
+    .menu-items {
+        position: absolute; /* Ustaw pozycję na absolute, aby menu było położone względem paska nawigacji */
+        top: 100%; /* Przesuń menu poniżej paska nawigacji */
+        left: 0; /* Umieść menu w lewym rogu paska nawigacji */
+        display: none; /* Domyślnie ukryj menu */
+        background-color: white; /* Stylizacja tła */
+        border: 1px solid black; /* Stylizacja obramowania */
+        padding: 10px; /* Dodaj wypełnienie, aby zawartość była czytelna */
+    }
+  
+    /* Styl dla pojedynczego elementu menu */
+    .menu-items a {
+        display: block;
+        text-decoration: none;
+        color: black;
+        padding: 5px 0;
+    }
+    
+    /* Pokaż menu, gdy pasek nawigacji jest aktywny (po kliknięciu) */
+    .hamburger-menu.active .menu-items {
+        display: block;
+  }
+
 }

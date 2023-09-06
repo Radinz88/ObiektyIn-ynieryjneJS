@@ -6,7 +6,7 @@ import obiekty from "../../assets/images/objects.jpg"
 function MainText() {
     return(
         <article id="mainText">
-            <strong class="super">Po zalogowaniu w portalu znajdziesz m.in.:</strong> 
+            <strong className="super">Po zalogowaniu w portalu znajdziesz m.in.:</strong> 
             <ul id="portalFunctions">
                 <li>listę wszystkich obiektów inżynieryjnych znajdująch się w Zakładzie Linii Kolejowych w Bydgoszczy,</li>
                 <li>opisy stanu technicznego obiektów,</li>

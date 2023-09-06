@@ -14,14 +14,6 @@ function MyVerticallyCenteredModal(props) {
       aria-labelledby="contained-modal-title-vcenter"
       centered
     >
-      <Modal.Header closeButton>
-        <Modal.Title id="contained-modal-title-vcenter">
-          <div id='centeredText'>
-            Zaloguj się lub zarejestruj
-          </div>
-        </Modal.Title>
-      </Modal.Header>
-
       <Modal.Body>
 
       {props.showLogin ? <LoginForm /> : <SignInForm />}

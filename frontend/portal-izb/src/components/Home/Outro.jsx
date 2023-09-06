@@ -4,7 +4,7 @@ import React from 'react';
 function Outro() {
     return(
         <article id="outro">
-            <strong class="super">Czy wiesz, że ...</strong>
+            <strong className="super">Czy wiesz, że ...</strong>
             <p>
                 W zarządzie Zakładu Linii Kolejowych w Bydgoszczy znajduje się ok. 1550 obiektów inżynieryjnych. Położone 
                 są głównie na terenie województwa kujawsko pomorskiego, ale część z tych obiektów znajduje się również 

@@ -6,7 +6,6 @@ function MapComponent(){
     return(
         <div className="mapComponent">
             <div id="mapSection" className='map'>
-                <br/>
                 <div id="mapHeader" className='map'>
                     <strong className='map'>Linie kolejowe</strong>
                     <br/>
