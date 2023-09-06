@@ -1,10 +1,11 @@
-import React, {useState} from "react";
+import React from "react";
 import logo from "../../assets/images/logo1.png";
-import flagPL from "../../assets/icons/poland-flag-icon.svg";
-import flagUK from "../../assets/icons/united-kingdom-flag-icon.svg";
 import './LoginBar.css';
+
+/*Import komponentów składowych*/
 import LoginButton from "./LoginButtonModalPopup";
 import HamburgerMenu from "./HamburgerMenu";
+import LanguageSelect from "./LanguageSelect";
 
 
 // Komponent reprezentujący logo
@@ -14,7 +15,7 @@ function Logo() {
   );
 }
 
-// Komponent reprezentujący nagłówek
+// Komponent tytułu strony w Nagłówku
 function Header() {
   return (
     <div className="textBlock">
@@ -23,32 +24,6 @@ function Header() {
     </div>
   );
 }
-
-// Komponent reprezentujący wybór języka
-function LanguageSelect() {
-  const [selectedLanguage, setSelectedLanguage] = useState('pl'); // Stan języka
-
-  const handleLanguageChange = (language) => {
-    setSelectedLanguage(language);
-
-    // !!!
-    // Tu trzeba dorobić zmianę tłumaczenia strony z PL na EN i na zad, może wykorzystać wbudowane moduły przeglądarki?
-    // !!!
-
-  };
-
-  return (
-    <div className="language-select">
-      <div className={`flag ${selectedLanguage === 'pl' ? 'active' : ''}`} onClick={() => handleLanguageChange('pl')}>
-        <img src={flagPL} alt="PL" />
-      </div>
-      <div className={`flag ${selectedLanguage === 'en' ? 'active' : ''}`} onClick={() => handleLanguageChange('en')}>
-        <img src={flagUK} alt="EN" />
-      </div>
-    </div>
-  );
-}
-
 
 
 // Główny komponent LoginBar, który używa powyższych komponentów
