@@ -4,7 +4,13 @@ import {Routes, Route, useLocation} from "react-router-dom";
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import {HomePage, ContactPage} from './Pages';
+import {
+  HomePage, 
+  News, 
+  Forum,
+  Literature,
+  Shop,
+  ContactPage} from './Pages';
 
 function App() {
   function Whoops404(){
@@ -22,6 +28,14 @@ function App() {
       <Route path="/" element={<HomePage/>}/>
 
       <Route path="/home" element={<HomePage/>}/>
+
+      <Route path="/news" element={<News/>}/>
+
+      <Route path="/forum" element={<Forum/>}/>
+
+      <Route path="/literature" element={<Literature/>}/>
+
+      <Route path="/shop" element={<Shop/>}/>
 
       <Route path="/contact" element={<ContactPage/>}/>
 

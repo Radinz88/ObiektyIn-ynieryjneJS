@@ -146,6 +146,13 @@ img#logo{
         display: none;
     }
 
+    .textBlock{
+        width: 100%;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+    }
+
     /*Hamburger Menu - komponent główny*/
     .hamburger-menu {
         display: flex;
@@ -164,20 +171,22 @@ img#logo{
         display: flex;
         flex-direction: column;
         align-self: flex-end;
-        justify-content: space-between;
+        align-items: center;
+        justify-content: space-around;
         width: 30px;
         height: 30px;   
-        border: 1px solid black;
+        border: none;
         background: none;
-        margin-right:10px;
+        margin: 3px 3px 0 0;
         padding: 0;
+        cursor: pointer;
     }
 
-    .line {
-        display: flexbox;
-        width: 100%;
+
+    .line{
         height: 4px;
-        background: solid black; 
+        width: 25px;
+        background: rgb(124, 19, 221);
     }
 
     /*Hamburger Menu - styl rozwijanego menu  */
@@ -208,9 +217,14 @@ img#logo{
     }
 
     a {
-        text-decoration: none; /* Usunięcie podkreślenia */
-        color: whitesmoke; /* Zmiana koloru tekstu na dowolny inny niż niebieski */
-      }
+        text-decoration: none;
+        color: whitesmoke; 
+    }
+}
 
-
+@media only screen and (max-width: 390px){
+        /*Hamburger Menu - styl rozwijanego menu  */
+        .menu-items{
+            width: 100%;
+        }
 }
