@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './BurgerBtn.css';
 import { Link } from 'react-router-dom';
 
-function Menu() {
+function Burger() {
   const [isActive, setIsActive] = useState(false);
 
   const handleButtonClick = () => {
@@ -17,13 +17,15 @@ function Menu() {
         <div className="line"></div>
       </button>
       <ul className={`menu ${isActive ? 'active' : ''}`}>
-        <li><Link to="home" className={`link ${isActive ? 'active' : ''}`}>"Home</Link></li>
-        <li><Link to="about" className={`link ${isActive ? 'active' : ''}`}>"About</Link></li>
-        <li><Link to="portfolio" className={`link ${isActive ? 'active' : ''}`}>"Portfolio</Link></li>
-        <li><Link to="contact" className={`link ${isActive ? 'active' : ''}`}>"Contact</Link></li>
+        <li><Link to="/home">Strona Główna</Link></li>
+        <li><Link to="/news">Aktualności</Link></li>
+        <li><Link to="/forum">Forum</Link></li>
+        <li><Link to="/literature">Literatura</Link></li>
+        <li><Link to="/shop">Sklep</Link></li>
+        <li><Link to="/contact">Kontakt</Link></li>
       </ul>
     </div>
   );
 }
 
-export default Menu;
+export default Burger;

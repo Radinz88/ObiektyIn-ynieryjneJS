@@ -4,7 +4,7 @@ import './LoginBar.css';
 
 /*Import komponentów składowych*/
 import LoginButton from "./LoginButtonModalPopup";
-import HamburgerMenu from "./HamburgerMenu";
+import Burger from "./HamburgerMenu";
 import LanguageSelect from "./LanguageSelect";
 
 
@@ -36,7 +36,7 @@ function LoginBar() {
       <div className="login-button">
         <LoginButton />
       </div>
-      <HamburgerMenu />
+      <Burger />
     </div>
   );
 }

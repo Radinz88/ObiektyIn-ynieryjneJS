@@ -129,8 +129,6 @@ img#logo{
     }
 
     div#LoginBar{
-        margin-right: 0;
-        padding-right: 0;
         width: 100%;
     }
 
@@ -140,6 +138,7 @@ img#logo{
 
     .textBlock{
         width: 100%;
+        margin-left: 10px;
         position: absolute;
         display: flex;
         justify-content: center;

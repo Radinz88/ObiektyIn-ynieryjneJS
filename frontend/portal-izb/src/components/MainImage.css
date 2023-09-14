@@ -1,6 +1,7 @@
 img#bridgeIMG{
     display: block;
     width: 100%;
+    margin-top: 5vh;
     min-width: 310px;
     margin-inline: 5px;
 }
