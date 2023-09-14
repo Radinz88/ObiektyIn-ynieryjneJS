@@ -1,53 +1,29 @@
-import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import React, { useState } from 'react';
+import './BurgerBtn.css';
+import { Link } from 'react-router-dom';
 
-function HamburgerMenu() {
-  const [menuVisible, setMenuVisible] = useState(false);
+function Menu() {
+  const [isActive, setIsActive] = useState(false);
 
-  const toggleMenu = () => {
-    setMenuVisible(!menuVisible);
+  const handleButtonClick = () => {
+    setIsActive(!isActive);
   };
-
-  const closeMenu = () => {
-    setMenuVisible(false);
-  };
-
-  useEffect(() => {
-    const handleDocumentClick = (e) => {
-      // Zamykaj menu, jeśli użytkownik kliknie poza menu
-      if (menuVisible && !e.target.closest(".hamburger-menu")) {
-        closeMenu();
-      }
-    };
-
-    document.addEventListener("click", handleDocumentClick);
-
-    return () => {
-      // Usuwaj nasłuchiwanie zdarzenia po odmontowaniu komponentu
-      document.removeEventListener("click", handleDocumentClick);
-    };
-  }, [menuVisible]);
 
   return (
-    <nav className={`hamburger-menu ${menuVisible ? 'active' : ''}`}>
-      <button className='burger' onClick={toggleMenu}>
+    <div>
+      <button className={`burger ${isActive ? 'active' : ''}`} onClick={handleButtonClick}>
         <div className="line"></div>
         <div className="line"></div>
         <div className="line"></div>
       </button>
-
-      <ul className={`menu-items ${menuVisible ? 'hidden' : ''}`}>
-        <li><Link onClick={closeMenu} >Zaloguj się</Link></li>
-        <li><Link onClick={closeMenu} >Zarejestuj się</Link></li>
-        <li><Link to="/home" onClick={closeMenu} >Home</Link></li>
-        <li><Link to="/news" onClick={closeMenu} >Aktualności</Link></li>
-        <li><Link to="/forum" onClick={closeMenu} >Forum</Link></li>
-        <li><Link to="/literature" onClick={closeMenu} >Literatura</Link></li>
-        <li><Link to="/shop" onClick={closeMenu} >Sklep</Link></li>
-        <li><Link to="/contact" onClick={closeMenu} >Kontakt</Link></li>
+      <ul className={`menu ${isActive ? 'active' : ''}`}>
+        <li><Link to="home" className={`link ${isActive ? 'active' : ''}`}>"Home</Link></li>
+        <li><Link to="about" className={`link ${isActive ? 'active' : ''}`}>"About</Link></li>
+        <li><Link to="portfolio" className={`link ${isActive ? 'active' : ''}`}>"Portfolio</Link></li>
+        <li><Link to="contact" className={`link ${isActive ? 'active' : ''}`}>"Contact</Link></li>
       </ul>
-    </nav>
+    </div>
   );
 }
 
-export default HamburgerMenu;
+export default Menu;

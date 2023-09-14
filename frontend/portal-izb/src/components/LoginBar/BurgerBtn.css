@@ -1,0 +1,79 @@
+/* Burger Styling */
+
+.burger{
+    background: transparent;
+    border:none;
+    outline: none;
+    cursor: pointer;
+    display: none;
+    position: relative;
+}
+
+.line{
+    width: 3rem;
+    height: 0.3rem;
+    background-color: var(--blue);
+    margin: 0.7rem;
+    border-radius: 20px;
+    transition: 0.3s ease-in-out;
+}
+
+
+@media only screen and (max-width: 1000px){
+    .burger{
+        display: block;
+        transition: 0.3s ease-in-out;
+    }
+
+    .burger.active .line:first-child {
+        transform: translateY(-300px);
+    }
+
+    .burger.active .line:nth-child(2) {
+        transform: rotate(-400deg) translateY(10px);
+    }
+
+    .burger.active .line:nth-child(3) {
+        transform: rotate(-320deg) translateY(-10px);
+    }
+}
+
+
+
+:root{
+    --blue: #702A9F;
+    --blueHover: #9549c7;
+}
+
+.menu{
+    display: flex;
+    width: 55%;
+    justify-content: space-around;
+    list-style: none;
+    
+}
+
+@media only screen and (max-width: 1000px){
+
+.menu{
+    display: none;
+}
+
+.menu.active {
+    display:flex;
+    height: 92vh;
+    position: absolute;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.link.active{
+    text-decoration: none;
+    font-size: 1.8rem;
+    color: black;
+    font-weight: bold;
+    position: relative; /* potrzebne do animacji */
+    padding: 0.2rem;
+    color: var(--blue);
+}
+}
