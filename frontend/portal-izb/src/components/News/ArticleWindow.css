@@ -1,0 +1,6 @@
+.article-window{
+    display: flex;
+    width: 70%;
+    height: max-content;
+    border-radius: 20px;
+}

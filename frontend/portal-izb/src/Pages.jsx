@@ -2,10 +2,11 @@ import React from 'react';
 
 //Import komponentów składowych
 import LoginBar from './components/LoginBar/LoginBar';
-import MainImage from './components/MainImage';
+import MainImage from './components/Home/MainImage';
 import MenuBar from './components/NavigationBar/MenuBar';
 import Home from './components/Home/Home';
 import ContactForm from './components/ContactForm/Contact';
+import NewsPage from './components/News/NewsPage';
 
 export function HomePage() {
     return(
@@ -24,7 +25,8 @@ export function News() {
             <LoginBar/> 
             <br/><br/>
             <MenuBar/> 
-            <h2>Strona "Aktualności" w budowie</h2>
+            <NewsPage/>
+            
         </div>
     )
 }

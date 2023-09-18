@@ -1,0 +1,18 @@
+
+.article-title{
+    display: flex;
+    flex-direction: column;
+}
+
+.article-title-h1{
+    font-size: 20px;
+    font-family: 'Montserrat';
+    font-weight: bold;
+}
+
+.article-title-span{
+    font-size: 10px;
+    font-family: 'Montserrat';
+    font-weight: 100;
+}
+

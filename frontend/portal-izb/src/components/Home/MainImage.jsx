@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './MainImage.css';
-import mostM4 from '../assets/images/mostMalinowskiego4.png';
-import mostM5 from '../assets/images/mostMalinowskiego5.png';
+import mostM4 from '../../assets/images/mostMalinowskiego4.png';
+import mostM5 from '../../assets/images/mostMalinowskiego5.png';
 
 function MainImage() {
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
