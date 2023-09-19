@@ -9,17 +9,18 @@ function ContactForm() {
         <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
           <Form.Label>Adres e-mail</Form.Label>
           <br/>
-          <Form.Control type="email" placeholder="np. email@email.com" style={{minWidth: "260px"}}/>
+          <Form.Control type="email" placeholder="np. email@email.com" style={{minWidth: "260px", width: "70vw", maxWidth:"700px"}}/>
         </Form.Group>
           <br/>
         <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
           <Form.Label>Wiadomość</Form.Label>
           <br/>
-          <Form.Control as="textarea" rows={3} placeholder="Tu wpisz treść wiadomości" style={{minHeight: "250px", minWidth: "260px"}}/>
+          <Form.Control as="textarea" rows={3} placeholder="Tu wpisz treść wiadomości" style={{minHeight: "250px", minWidth: "260px", width: "70vw", maxWidth:"700px"}}/>
         </Form.Group>
 
         <div id='btn'>
-          <Button  as="input" type="submit" value="Wyślij do Nas wiadomość" />{' '}
+          <Button  as="input" type="submit" value="Wyślij do Nas wiadomość" />
+
         </div>
         
       </Form>

@@ -2,12 +2,10 @@
 
 div#LoginBar{
     display: flex;
-    white-space: nowrap;
     justify-content: space-between;
-    align-content: center;
     height: 5.5vh;
-    width: 100%;
-    min-width: 310px;
+    width: 100vw;
+    min-width: 280px;
     background-color: white;    
     position: fixed;
     margin: 0;

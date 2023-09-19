@@ -12,7 +12,7 @@ const articleTextId = '2023-09-18-rsz-1'; //docelowo skrypt do pobierania danych
 function ArticleSnippet() {
     return(
         <div className='article-snippet'>
-            <p>{snippet}</p>
+            <p>{snippet}...</p>
             <a href={articleTextId}>CZYTAJ DALEJ</a>
         </div>
     )

@@ -1,7 +1,10 @@
 .news-page{
     display: flex;
     flex-direction: column;
-    width: 70%;
+    width: 100%;
+    margin-top: 30px;
+    margin-inline: 0;
+    padding-inline: 0;
     justify-content: center;
     align-items: center;
 }

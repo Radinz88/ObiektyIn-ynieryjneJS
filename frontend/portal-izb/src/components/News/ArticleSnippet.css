@@ -1,0 +1,20 @@
+.article-snippet{
+    display: flex;
+    flex-direction: column;
+}
+
+.article-snippet a{
+    text-align: end;
+    margin-top: 0;
+}
+
+.article-snippet p{
+    font-family: "Montserrat";
+    font-size: 14px;
+}
+
+@media only screen and (max-width: 768px){
+    .article-snippet p{
+        font-size: 12px;
+    }
+}
